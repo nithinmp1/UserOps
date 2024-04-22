@@ -1,0 +1,6 @@
+rdbms:
+  driver: 'pdo_mysql'
+  host : 'localhost'
+  dbname : 'user_management'
+  user : 'root'
+  password : ''
