@@ -1,1 +1,9 @@
+app: User Management
+version: 1.0
+date_format: "Y-m-d H:i:s"
 log_file: '/logs/app.log'
+filesystem:
+  adapter: local
+  adapter_config:
+    root: '/src'
+response_template: '/Templates/response.json'

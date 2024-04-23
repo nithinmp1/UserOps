@@ -2,18 +2,9 @@
 
 use Slim\App;
 
-/*
 return [
-    'hello/{name}' => ['http' => 'get', 'service_name' => 'YourService', 'method_name' => 'hello'],
-    'hello' => ['http' => 'get', 'service_name' => 'YourService', 'method_name' => 'hello'],
-    'hello' => ['http' => 'post', 'service_name' => 'YourService', 'method_name' => 'hello'],
-];
-*/
-
-return [
-    '/hello' => [
-        'GET' => ['service_name' => 'YourService', 'method_name' => 'getHello'],
-        'POST' => ['service_name' => 'YourService', 'method_name' => 'postHello'],
+    '/' => [
+        'GET' => ['service_name' => 'userService', 'method_name' => 'welcome'],
     ],
     '/user/{id}' => [
         'GET' => ['service_name' => 'userService', 'method_name' => 'getUser'],
@@ -23,6 +14,8 @@ return [
     '/users' => [
         'GET' => ['service_name' => 'userService', 'method_name' => 'getUsers'],
     ],
-    // Add more routes as needed...
+    '/user' => [
+        'POST' => ['service_name' => 'userService', 'method_name' => 'postUser'],
+    ],
 ];
 
