@@ -1,0 +1,9 @@
+{
+    "status" : "{{status}}",
+    "message" : "{{message}}",
+    "data" : "{{data}}",
+    "metadata" : {
+        "timestamp" : "CURRENTTIMESTAMP",
+        "version" : "VERSION"
+    }
+}

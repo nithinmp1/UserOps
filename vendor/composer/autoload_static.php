@@ -50,6 +50,12 @@ class ComposerStaticInit072b26549f4f99056266995fafa24b0e
         array (
             'Monolog\\' => 8,
         ),
+        'L' => 
+        array (
+            'League\\MimeTypeDetection\\' => 25,
+            'League\\Flysystem\\Local\\' => 23,
+            'League\\Flysystem\\' => 17,
+        ),
         'F' => 
         array (
             'FastRoute\\' => 10,
@@ -154,6 +160,18 @@ class ComposerStaticInit072b26549f4f99056266995fafa24b0e
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'League\\MimeTypeDetection\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/mime-type-detection/src',
+        ),
+        'League\\Flysystem\\Local\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/flysystem-local',
+        ),
+        'League\\Flysystem\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/flysystem/src',
         ),
         'FastRoute\\' => 
         array (

@@ -44,4 +44,34 @@ class User
     private $updated_at;
 
     // Getters and setters for properties
+
+    function setUsername($username)  {
+        $this->username = $username;
+    }
+
+    function setEmail($email)  {
+        $this->email = $email;
+    }
+
+    function setPassword($password)  {
+        $this->password = $password;
+    }
+
+    public function setCreatedAt($createdAt = null)
+    {
+        if ($createdAt === null) {
+            $createdAt = new \DateTime();
+        }
+        $this->created_at = $createdAt;
+    }
+
+    // Set updated_at to current datetime when not set
+    public function setUpdatedAt($updatedAt = null)
+    {
+        if ($updatedAt === null) {
+            $updatedAt = new \DateTime();
+        }
+        $this->updated_at = $updatedAt;
+    }
+
 }
